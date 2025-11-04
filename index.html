@@ -1,113 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>B.Pharm Student Portfolio - Lovely Professional University</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #f7f9fb;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    background-color: #2a7ecf;
-    color: white;
-    padding: 20px 10px;
-    text-align: center;
-  }
-  header h1 {
-    margin: 0;
-    font-size: 2.4em;
-  }
-  header p {
-    margin: 4px 0 0 0;
-    font-size: 1.2em;
-    font-weight: 300;
-  }
-  section {
-    max-width: 700px;
-    margin: 30px auto;
-    background: white;
-    padding: 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 12px #cbd6e2;
-  }
-  h2 {
-    color: #2a7ecf;
-    border-bottom: 2px solid #2a7ecf;
-    padding-bottom: 6px;
-  }
-  p, ul {
-    line-height: 1.6;
-    font-size: 1.1em;
-  }
-  ul {
-    padding-left: 20px;
-  }
-  footer {
-    text-align: center;
-    color: #aaa;
-    padding: 15px 10px;
-    font-size: 0.9em;
-  }
-  a {
-    color: #2a7ecf;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+<title> 3 button examples</title>
+<style>
+    body{
+        margin: auto;
+    }
+</style>
 <body>
+<h2 id="Five">Welcome to my web page</h2>
+<button onclick="alert1()"> Show Alert</button>
+<button onclick="changetxt()"> Change Text</button>
+<button onclick="colorchange()"> Change Color</button>
 
-<header>
-  <h1>Student Portfolio</h1>
-  <p>Bachelor of Pharmacy (B.Pharm) - Lovely Professional University</p>
-</header>
-
-<section>
-  <h2>About Me</h2>
-  <p>My name is <b>Tanya Shridhar</b> .I am a dedicated university student currently pursuing a Bachelor of Pharmacy (B.Pharm) degree at Lovely Professional University. I am passionate about pharmaceutical sciences and aspire to contribute meaningfully to the medical and healthcare industry.</p>
-</section>
-
-<section>
-  <h2>Education</h2>
-  <ul>
-    <li>Lovely Professional University — B.Pharmacy (2025 - Present)</li>
-    <li>Completed Higher Secondary School with Science and Mathematics background</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Skills & Strengths</h2>
-  <ul>
-    <li>Strong foundation in pharmacy subjects including pharmacology, pharmaceutics, and medicinal chemistry</li>
-    <li>Basic knowledge of laboratory techniques and drug formulation</li>
-    <li>Good understanding of healthcare and medical terminologies</li>
-    <li>Strong analytical and problem-solving skills</li>
-    <li>Eager learner and adaptability to new scientific advancements</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Assignments & Projects</h2>
-  <p>Currently working on academic assignments related to pharmaceutical sciences, including drug development, pharmacokinetics, and medication safety studies. Looking forward to sharing completed projects in the near future.</p>
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <p>Email: tanyashridhar4@gmail.com</p>
-  <p>Phone: +91-8219888239</p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/tanya-shridhar-51a400395/ target="_blank" rel="noopener noreferrer">yourprofile</a></p>
-</section>
-
-<footer>
-  &copy; 2025 Your Name | Lovely Professional University
-</footer>
-
+    <script>
+        const alert1=()=>{
+            alert('Hello! This is an Alert!')
+        }                
+        const changetxt=()=>{
+            document.getElementById('Five').innerHTML='This is the change in the text'
+        }                
+        const colorchange=()=>{
+            document.body.style.backgroundColor='red'
+        }                
+    </script>
 </body>
 </html>
